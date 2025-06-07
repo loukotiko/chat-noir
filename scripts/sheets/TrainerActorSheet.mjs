@@ -1,3 +1,12 @@
+import {
+  ATTRIBUTES,
+  ATTRIBUTES_SOCIAL,
+  RANKS,
+  SKILLS_FIGHT,
+  SKILLS_KNOWLEDGE,
+  SKILLS_SOCIAL,
+  SKILLS_SURVIVAL,
+} from "../localizedData.mjs";
 import { TEMPLATES } from "../templates.mjs";
 
 export class TrainerActorSheet extends ActorSheet {
@@ -9,16 +18,19 @@ export class TrainerActorSheet extends ActorSheet {
   /** @override */
   async getData() {
     const context = await super.getData();
+    context.ATTRIBUTES = ATTRIBUTES;
+    context.ATTRIBUTES_SOCIAL = ATTRIBUTES_SOCIAL;
+    context.SKILLS_FIGHT = SKILLS_FIGHT;
+    context.SKILLS_SURVIVAL = SKILLS_SURVIVAL;
+    context.SKILLS_SOCIAL = SKILLS_SOCIAL;
+    context.SKILLS_KNOWLEDGE = SKILLS_KNOWLEDGE;
 
-    context.ranks = {
-      beginner: "Beginner",
-      amateur: "Amateur",
-    };
+    // for parts
+    context.TEMPLATES = TEMPLATES;
 
-    context.natures = {
-      quirky: "Quirky",
-      adamant: "Adamant",
-    };
+    // put these in compendiums items
+    context.NATURES = { quirky: "Quirky" };
+    context.RANKS = RANKS;
 
     return context;
   }

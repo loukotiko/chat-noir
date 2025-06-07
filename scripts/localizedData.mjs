@@ -1,0 +1,52 @@
+export const RANKS = {
+  starter: "POKEROLE+.RANKS.STARTER",
+  beginner: "POKEROLE+.RANKS.BEGINNER",
+  amateur: "POKEROLE+.RANKS.AMATEUR",
+  ace: "POKEROLE+.RANKS.ACE",
+  professional: "POKEROLE+.RANKS.PROFESSIONAL",
+  master: "POKEROLE+.RANKS.MASTER",
+  champion: "POKEROLE+.RANKS.CHAMPION",
+};
+
+export const ATTRIBUTES = {
+  strength: "POKEROLE+.ATTRIBUTES.STRENGTH",
+  dexterity: "POKEROLE+.ATTRIBUTES.DEXTERITY",
+  vitality: "POKEROLE+.ATTRIBUTES.VITALITY",
+  insight: "POKEROLE+.ATTRIBUTES.INSIGHT",
+};
+
+export const ATTRIBUTES_SOCIAL = {
+  tough: "POKEROLE+.ATTRIBUTES.TOUGH",
+  cool: "POKEROLE+.ATTRIBUTES.COOL",
+  beauty: "POKEROLE+.ATTRIBUTES.BEAUTY",
+  cute: "POKEROLE+.ATTRIBUTES.CUTE",
+  clever: "POKEROLE+.ATTRIBUTES.CLEVER",
+};
+
+export const SKILLS_FIGHT = {
+  brawl: "POKEROLE+.SKILLS.BRAWL",
+  throw: "POKEROLE+.SKILLS.THROW",
+  evasion: "POKEROLE+.SKILLS.EVASION",
+  weapons: "POKEROLE+.SKILLS.WEAPONS",
+};
+
+export const SKILLS_SURVIVAL = {
+  alert: "POKEROLE+.SKILLS.ALERT",
+  athletic: "POKEROLE+.SKILLS.ATHLETIC",
+  nature: "POKEROLE+.SKILLS.NATURE",
+  stealth: "POKEROLE+.SKILLS.STEALTH",
+};
+
+export const SKILLS_SOCIAL = {
+  allure: "POKEROLE+.SKILLS.ALLURE",
+  etiquette: "POKEROLE+.SKILLS.ETIQUETTE",
+  intimidate: "POKEROLE+.SKILLS.INTIMIDATE",
+  perform: "POKEROLE+.SKILLS.PERFORM",
+};
+
+export const SKILLS_KNOWLEDGE = {
+  crafts: "POKEROLE+.SKILLS.CRAFTS",
+  lore: "POKEROLE+.SKILLS.LORE",
+  medicine: "POKEROLE+.SKILLS.MEDICINE",
+  science: "POKEROLE+.SKILLS.SCIENCE",
+};

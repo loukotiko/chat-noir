@@ -1,0 +1,96 @@
+<div class="columns">
+  <div class="column">
+    <div class="column-content">
+      <div class="attributes-group">
+        {{#each ATTRIBUTES as |label key|}}
+          <div class="attribute">
+            <label>{{localize label}}</label>
+            <input
+              name="system.attributes.{{key}}"
+              type="number"
+              value="{{lookup ../actor.system.attributes key}}"
+            />
+            <div class="max">/5</div>
+          </div>
+        {{/each}}
+      </div>
+      <div class="attributes-group">
+        {{#each ATTRIBUTES_SOCIAL as |label key|}}
+          <div class="attribute {{key}}">
+            <label>{{localize label}}</label>
+            <input
+              name="system.attributes.{{key}}"
+              type="number"
+              value="{{lookup ../actor.system.attributes key}}"
+            />
+            <div class="max">/5</div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="column-content">
+      <div class="skills-container">
+        <div class="skills-group">
+          <h2>{{localize "POKEROLE+.SKILLS_CATEGORIES.FIGHT"}}</h2>
+          {{#each SKILLS_FIGHT as |label key|}}
+            <div class="skill {{key}}">
+              <label>{{localize label}}</label>
+              <input
+                name="system.skills.{{key}}"
+                type="number"
+                value="{{lookup ../actor.system.skills key}}"
+              />
+              <div class="max">/5</div>
+            </div>
+          {{/each}}
+        </div>
+        <div class="skills-group">
+          <h2>{{localize "POKEROLE+.SKILLS_CATEGORIES.SURVIVAL"}}</h2>
+          {{#each SKILLS_SURVIVAL as |label key|}}
+            <div class="skill {{key}}">
+              <label>{{localize label}}</label>
+              <input
+                name="system.skills.{{key}}"
+                type="number"
+                value="{{lookup ../actor.system.skills key}}"
+              />
+              <div class="max">/5</div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="skills-container">
+        <div class="skills-group">
+          <h2>{{localize "POKEROLE+.SKILLS_CATEGORIES.SOCIAL"}}</h2>
+          {{#each SKILLS_SOCIAL as |label key|}}
+            <div class="skill {{key}}">
+              <label>{{localize label}}</label>
+              <input
+                name="system.skills.{{key}}"
+                type="number"
+                value="{{lookup ../actor.system.skills key}}"
+              />
+              <div class="max">/5</div>
+            </div>
+          {{/each}}
+        </div>
+        <div class="skills-group">
+          <h2>{{localize "POKEROLE+.SKILLS_CATEGORIES.KNOWLEDGE"}}</h2>
+          {{#each SKILLS_KNOWLEDGE as |label key|}}
+            <div class="skill {{key}}">
+              <label>{{localize label}}</label>
+              <input
+                name="system.skills.{{key}}"
+                type="number"
+                value="{{lookup ../actor.system.skills key}}"
+              />
+              <div class="max">/5</div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

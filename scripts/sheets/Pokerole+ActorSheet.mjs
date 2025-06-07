@@ -13,12 +13,12 @@ export class PokerolePlusActorSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["pokerole-plus", "actor-sheet"],
-      width: 400,
+      width: 440,
       height: "auto",
       tabs: [
         {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
+          navSelector: ".tab-links",
+          contentSelector: ".tab-contents",
           initial: "attributes",
         },
       ],

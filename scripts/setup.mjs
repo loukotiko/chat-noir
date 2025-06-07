@@ -4,10 +4,14 @@ import { log } from "./utils.mjs";
 import { ID } from "./consts.mjs";
 import { PokerolePlusActorSheet } from "./sheets/Pokerole+ActorSheet.mjs";
 import { PokerolePlusActor } from "./actors/Pokerole+Actor.mjs";
+import registerHandlebarsHelpers from "./handlebarsHelpers.mjs";
 
 export default async function onInit() {
   await setupSettings();
   log("Settings created!");
+
+  await registerHandlebarsHelpers();
+  log("Handlebars helpers registered!");
 
   await initializeTemplatesAndDialogs();
   log("Initialized templates and dialogs!");

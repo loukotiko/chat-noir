@@ -1,18 +1,27 @@
 <form class="{{cssClass}} {{actor.type}}">
   <div class="columns">
     <div class="column">
-      <div class="character-picture-container">
-        <img
-          class="character-picture"
-          src="{{actor.img}}"
-          title="{{actor.name}}"
-          data-edit="img"
-        />
+      <div class="column-content">
+        <div class="character-picture-container">
+          <img
+            class="character-picture"
+            src="{{actor.img}}"
+            title="{{actor.name}}"
+            data-edit="img"
+          />
+        </div>
       </div>
     </div>
     <div class="column">
       <div class="column-header">
         <h1>Pokémon League</h1>
+        <div class="data-group">
+          <div class="data data-name">
+            <label>Name :</label>
+            <input name="name" type="text" value="{{actor.name}}" />
+          </div>
+        </div>
+
         <div class="data-group">
           <div class="data data-rank">
             <label>Rank :</label>
@@ -21,54 +30,61 @@
               type="text"
               value="{{actor.system.rank}}"
             >
-              {{selectOptions ranks selected=actor.system.rank localize=true}}
+              {{selectOptions RANKS selected=actor.system.rank localize=true}}
             </select>
           </div>
-        </div>
-        <div class="data-group">
-          <div class="data data-name">
-            <label>Name :</label>
-            <input name="name" type="text" value="{{actor.name}}" />
-          </div>
-          <div class="data data-age">
-            <label>Age :</label>
-            <input
-              name="system.age"
-              type="number"
-              value="{{actor.system.age}}"
-            />
+          <div class="data data-nature">
+            <label for="system.nature">Nature :</label>
+            <select
+              name="system.nature"
+              type="text"
+              value="{{actor.system.nature}}"
+            >
+              {{selectOptions
+                NATURES
+                selected=actor.system.nature
+                localize=true
+              }}
+            </select>
           </div>
         </div>
       </div>
 
       <div class="column-content">
-        <div class="data-container">
-          <div class="data-group">
-            <div class="data data-money">
-              <label for="money">Money :</label>
-              <input
-                name="money"
-                type="number"
-                value="{{actor.system.money}}"
-              />
-            </div>
-            <div class="data data-age">
-              <label for="system.nature">Nature :</label>
-              <select
-                name="system.nature"
-                type="text"
-                value="{{actor.system.nature}}"
-              >
-                {{selectOptions
-                  natures
-                  selected=actor.system.nature
-                  localize=true
-                }}
-              </select>
-            </div>
-          </div>
-        </div>
+        <nav class="tab-links" data-group="primary">
+          {{#unless limitedPermissions}}
+            <a class="tab-link" data-tab="attributes" data-tooltip="Attributes">
+              <i class="fa-regular fa-user"></i>              
+            </a>
+            <a class="tab-link" data-tab="items" data-tooltip="Inventory">
+              <i class="fa-regular fa-sack"></i>              
+            </a>
+            <a class="tab-link" data-tab="team" data-tooltip="Team">
+              <i class="icon-pokeball"></i> 
+            </a>
+            <!--
+            <a class="tab-link" data-tab="moves" data-tooltip="Moves">
+              <i class="fa-regular fa-bolt"></i>              
+            </a>
+            <a class="tab-link" data-tab="effects" data-tooltip="Effects">
+              <i class="fa-regular fa-snooze"></i>              
+            </a>
+            -->
+          {{/unless}}
+          <a class="tab-link" data-tab="biography" data-tooltip="Biography">
+            <i class="fa-regular fa-book"></i>            
+          </a>
+        </nav>
       </div>
     </div>
   </div>
+  <div class="tab-contents">
+    <div class="tab attributes" data-group="primary" data-tab="attributes">
+      {{> (lookup TEMPLATES 'TRAINER_ACTOR_SHEET__ATTRIBUTES')}}
+    </div>
+    <div class="tab biography" data-group="primary" data-tab="biography">
+      {{> (lookup TEMPLATES 'TRAINER_ACTOR_SHEET__BIOGRAPHY')}}
+    </div>
+  </div>
+
 </form>
