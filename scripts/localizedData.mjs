@@ -13,9 +13,6 @@ export const ATTRIBUTES = {
   dexterity: "POKEROLE+.ATTRIBUTES.DEXTERITY",
   vitality: "POKEROLE+.ATTRIBUTES.VITALITY",
   insight: "POKEROLE+.ATTRIBUTES.INSIGHT",
-};
-
-export const ATTRIBUTES_SOCIAL = {
   tough: "POKEROLE+.ATTRIBUTES.TOUGH",
   cool: "POKEROLE+.ATTRIBUTES.COOL",
   beauty: "POKEROLE+.ATTRIBUTES.BEAUTY",
@@ -23,30 +20,28 @@ export const ATTRIBUTES_SOCIAL = {
   clever: "POKEROLE+.ATTRIBUTES.CLEVER",
 };
 
-export const SKILLS_FIGHT = {
+export const SKILLS = {
   brawl: "POKEROLE+.SKILLS.BRAWL",
   throw: "POKEROLE+.SKILLS.THROW",
   evasion: "POKEROLE+.SKILLS.EVASION",
   weapons: "POKEROLE+.SKILLS.WEAPONS",
-};
-
-export const SKILLS_SURVIVAL = {
   alert: "POKEROLE+.SKILLS.ALERT",
   athletic: "POKEROLE+.SKILLS.ATHLETIC",
   nature: "POKEROLE+.SKILLS.NATURE",
   stealth: "POKEROLE+.SKILLS.STEALTH",
-};
-
-export const SKILLS_SOCIAL = {
   allure: "POKEROLE+.SKILLS.ALLURE",
   etiquette: "POKEROLE+.SKILLS.ETIQUETTE",
   intimidate: "POKEROLE+.SKILLS.INTIMIDATE",
   perform: "POKEROLE+.SKILLS.PERFORM",
-};
-
-export const SKILLS_KNOWLEDGE = {
   crafts: "POKEROLE+.SKILLS.CRAFTS",
   lore: "POKEROLE+.SKILLS.LORE",
   medicine: "POKEROLE+.SKILLS.MEDICINE",
   science: "POKEROLE+.SKILLS.SCIENCE",
+};
+
+export const SKILLS_GROUPS = {
+  fight: "POKEROLE+.SKILLS_GROUPS.FIGHT",
+  survival: "POKEROLE+.SKILLS_GROUPS.SURVIVAL",
+  social: "POKEROLE+.SKILLS_GROUPS.SOCIAL",
+  knowledge: "POKEROLE+.SKILLS_GROUPS.KNOWLEDGE",
 };
