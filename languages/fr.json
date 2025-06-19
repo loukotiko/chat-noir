@@ -1,0 +1,20 @@
+{
+  "LCN": {
+    "SYSTEM.TITLE": "Le Chat Noir",
+    "SETTINGS": {
+      "DEBUG": {
+        "NAME": "Mode debug",
+        "HINT": "Affiche des informations dans la console pour les développeurs."
+      }
+    },
+    "MENUS": {
+      "attributes": "Attributs",
+      "inventory": "Inventaire",
+      "daemon": "Démon",
+      "biography": "Biographie",
+      "settings": "Paramètres",
+      "spells": "Grimoire",
+      "effects": "Statuts"
+    }
+  }
+}

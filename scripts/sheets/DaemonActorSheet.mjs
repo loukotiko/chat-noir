@@ -1,9 +1,9 @@
 import { TEMPLATES } from "../templates.mjs";
 
-export class PokemonActorSheet extends ActorSheet {
+export class DaemonActorSheet extends ActorSheet {
   /** @override */
   get template() {
-    return TEMPLATES.POKEMON_ACTOR_SHEET;
+    return TEMPLATES.DAEMON_ACTOR_SHEET;
   }
 
   /** @override */

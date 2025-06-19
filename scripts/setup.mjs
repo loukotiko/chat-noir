@@ -2,8 +2,8 @@ import { setupSettings } from "./settings.mjs";
 import { initializeTemplatesAndDialogs } from "./templates.mjs";
 import { log } from "./utils.mjs";
 import { ID } from "./consts.mjs";
-import { PokerolePlusActorSheet } from "./sheets/Pokerole+ActorSheet.mjs";
-import { PokerolePlusActor } from "./actors/Pokerole+Actor.mjs";
+import { LCNActorSheet } from "./sheets/lcnActorSheet.mjs";
+import { LCNActor } from "./actors/LCNActor.mjs";
 import registerHandlebarsHelpers from "./handlebarsHelpers.mjs";
 
 export default async function onInit() {
@@ -22,7 +22,7 @@ export default async function onInit() {
 
 function registerClassesAndSheetsToFoundry() {
   // Define custom Document classes
-  CONFIG.Actor.documentClass = PokerolePlusActor;
+  CONFIG.Actor.documentClass = LCNActor;
   /*  
   CONFIG.Item.documentClass = PokeroleItem;
   CONFIG.Combat.documentClass = PokeroleCombat;
@@ -31,7 +31,7 @@ function registerClassesAndSheetsToFoundry() {
 */
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet(ID, PokerolePlusActorSheet, {
+  Actors.registerSheet(ID, LCNActorSheet, {
     makeDefault: true,
   });
   /*  Items.unregisterSheet("core", ItemSheet);

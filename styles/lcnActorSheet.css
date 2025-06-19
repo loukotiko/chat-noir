@@ -1,0 +1,40 @@
+@import url(lcnActorSheet_aside.css);
+@import url(lcnActorSheet_header.css);
+@import url(lcnActorSheet_main.css);
+
+.lcn.actor-sheet {
+  /* STYLES */
+  --content-background: var(--obsidian);
+  --main-text-color: var(--white);
+
+  background: var(--content-background);
+  color: var(--main-text-color);
+
+  .window-content {
+    /* reset */
+    padding: 0;
+    overflow: unset;
+    background: transparent;
+    padding: var(--small-spacing-vertical) var(--small-spacing-horizontal);
+    font-family: LCN-Read;
+    color: unset;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "aside main";
+    > header {
+      grid-area: header;
+    }
+    > aside {
+      width: 160px;
+      grid-area: aside;
+    }
+    > main {
+      flex: 1;
+      grid-area: main;
+    }
+  }
+}

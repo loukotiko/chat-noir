@@ -1,0 +1,8 @@
+.lcn.actor-sheet {
+  main {
+    /* STYLES */
+    --attribute-border-color: var(--obsidian);
+    --attribute-background-color: rgb(87 207 191);
+    --attribute-color: var(--obsidian);
+  }
+}

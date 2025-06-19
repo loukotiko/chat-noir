@@ -1,2 +1,2 @@
-export const ID = "pokerole-plus";
-export const NAME = "Pokérole+";
+export const ID = "chat-noir";
+export const NAME = "Le Chat Noir";

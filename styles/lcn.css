@@ -1,0 +1,40 @@
+@import url(lcnActorSheet.css);
+
+@font-face {
+  font-family: "LCN-Hand";
+  src: url("../assets/fonts/Carattere-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LCN-Read";
+  src: url("../assets/fonts/Rosarivo-Regular.ttf") format("truetype");
+}
+
+.lcn {
+  /* COLORS */
+  --black: #000000;
+  --white: #ffffff;
+  --obsidian: #211f25;
+  --almost-obsidian: #302d35;
+  --polished-obsidian: #60596e;
+  --witch-purple: #8d39c5;
+  --star-purple: #d683ff;
+
+  /* SIZES */
+  --big-spacing: 16px;
+  --small-spacing: 8px;
+  --big-border-size: 3px;
+
+  /* UTILS */
+  --horizontal-vertical-ratio: 0.4;
+
+  /* CALCS */
+  --small-spacing-horizontal: var(--small-spacing);
+  --small-spacing-vertical: calc(
+    var(--small-spacing) * var(--horizontal-vertical-ratio)
+  );
+
+  .columns {
+    display: flex;
+  }
+}

@@ -1,0 +1,36 @@
+<form class="{{cssClass}} {{actor.type}} layout">
+  <header>
+    <input name="name" type="text" value="{{actor.name}}" class="actor-name" />
+  </header>
+  <aside>
+    <div class="character-picture-container">
+      <img
+        class="character-picture"
+        src="{{actor.img}}"
+        title="{{actor.name}}"
+        data-edit="img"
+      />
+    </div>
+    <nav class="tab-menu" data-group="primary">
+      {{#each MENU as |menuItem key|}}
+      <a class="tab-link" data-tab="{{key}}">
+        {{localize (concat "LCN.MENUS." key)}}
+        <i class="{{menuItem.icon}}"></i>
+      </a>
+      {{/each}}
+    </nav>
+  </aside>
+  <main>
+    <div class="content">
+      <div class="tab-contents">
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+          {{> (lookup TEMPLATES 'WITCH_ACTOR_SHEET__ATTRIBUTES')}}
+        </div>
+        <div class="tab biography" data-group="primary" data-tab="biography">
+          {{> (lookup TEMPLATES 'WITCH_ACTOR_SHEET__BIOGRAPHY')}}
+        </div>
+      </div>
+    </div>
+  </main>
+
+</form>

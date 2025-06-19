@@ -1,0 +1,35 @@
+.lcn.actor-sheet {
+  /* STYLES */
+  --header-background-color: var(--obsidian);
+  --header-text-color: white;
+
+  --heading-color: white;
+
+  .window-header {
+    background-color: transparent;
+    padding: var(--small-spacing-vertical) var(--small-spacing-horizontal);
+    justify-content: center;
+
+    /* reset */
+    line-height: normal;
+    flex: none;
+    border: none;
+
+    .window-title {
+      display: none;
+    }
+  }
+
+  header {
+    .actor-name {
+      font-family: LCN-Hand;
+      font-size: 44px;
+      text-align: center;
+
+      /* reset */
+      color: unset;
+      border: 0;
+      height: auto;
+    }
+  }
+}

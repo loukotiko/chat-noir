@@ -1,7 +1,7 @@
 {
-  "id": "pokerole-plus",
-  "title": "Pokérole v2 for Foundry",
-  "description": "A foundry system to play Pokerole v2.",
+  "id": "chat-noir",
+  "title": "Le Chat Noir",
+  "description": "A foundry system to play Le Chat Noir.",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
@@ -16,13 +16,13 @@
       "flags": {}
     }
   ],
-  "esmodules": ["scripts/pokerole+.mjs"],
-  "styles": ["styles/pokerole+.css"],
+  "esmodules": ["scripts/lcn.mjs"],
+  "styles": ["styles/lcn.css"],
   "languages": [
     {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
+      "lang": "fr",
+      "name": "Français",
+      "path": "languages/fr.json"
     }
   ],
   "url": "#{URL}#",
@@ -31,6 +31,6 @@
   "readme": "readme.md",
   "gridDistance": 1,
   "gridUnits": "m",
-  "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "will"
+  "primaryTokenAttribute": "aether",
+  "secondaryTokenAttribute": "nihil"
 }

@@ -1,67 +1,30 @@
 {
   "Actor": {
-    "types": ["pokemon", "trainer"],
+    "types": ["daemon", "witch"],
     "templates": {
       "base": {
-        "rank": "",
-        "nature": "",
-        "confidence": 0,
-        "health": 0,
-        "will": 0
+        "aether": 0,
+        "nihil": 0,
+        "spells": [],
+        "inventory": []
       }
     },
-    "pokemon": {
+    "daemon": {
       "templates": ["base"]
     },
-    "trainer": {
+    "witch": {
       "templates": ["base"],
-      "age": 0,
-      "concept": "",
-      "money": 0,
-      "team": [],
-
-      "attributes": {
-        "strength": 0,
-        "dexterity": 0,
-        "vitality": 0,
-        "insight": 0,
-
-        "tough": 0,
-        "cool": 0,
-        "beauty": 0,
-        "clever": 0,
-        "cute": 0
-      },
-
-      "skills": {
-        "brawl": 0,
-        "throw": 0,
-        "evasion": 0,
-        "weapons": 0,
-
-        "alert": 0,
-        "athletic": 0,
-        "nature": 0,
-        "stealth": 0,
-
-        "allure": 0,
-        "etiquette": 0,
-        "intimidate": 0,
-        "perform": 0,
-
-        "crafts": 0,
-        "lore": 0,
-        "medicine": 0,
-        "science": 0
-      },
-
-      "pokedex": {
-        "caught": 0,
-        "seen": 0
-      },
-
-      "inventory": [],
-      "badges": []
+      "anima": 0,
+      "spiritus": 0,
+      "corpus": 0,
+      "natura": 0,
+      "aqua": 0,
+      "ignis": 0,
+      "aer": 0,
+      "terra": 0,
+      "proximal": "",
+      "antagonal": "",
+      "daemons": []
     }
   }
 }
